@@ -1,0 +1,2 @@
+# hackintosh-intel-u7-265k-ASUS-ROG-STRIX-Z890-A-GAMING-WIFI-S
+hackintosh intel-u7-265k + ASUS-ROG-STRIX-Z890-A-GAMING-WIFI-S
