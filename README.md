@@ -9,7 +9,7 @@
 **support macOS Sequoia 26.0.0 - 26.0.1**  
 
 **处理器名称:** 8C+12c Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
-**主板名称:** Asus ROG Strix Z890-A Gaming WiFi S 
+**主板名称:** Asus ROG Strix Z890-A Gaming WiFi S  
 **主板芯片组:** Intel Arrow Point Z890, Intel Arrow Lake-S  
 
 **系统内存:** 95505 MB  (DDR5 SDRAM)  

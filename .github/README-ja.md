@@ -7,19 +7,19 @@
 **OpenCore 1.05**
 **macOS Sequoia 26.0.0 - 26.0.1 をサポート**
 
-プロセッサ: 8P+12E Intel Core Ultra 7 265K, 5399 MHz (54 x 100)
-マザーボード: Asus ROG Strix Z890-A Gaming WiFi S
-チップセット: Intel Arrow Point Z890, Intel Arrow Lake-S
+プロセッサ: 8P+12E Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
+マザーボード: Asus ROG Strix Z890-A Gaming WiFi S  
+チップセット: Intel Arrow Point Z890, Intel Arrow Lake-S  
 
-システムメモリ: 95505 MB (DDR5 SDRAM)
+システムメモリ: 95505 MB (DDR5 SDRAM)  
 
-グラフィックスアダプタ1: Intel Arrow Lake-HX/S - 統合グラフィックスコントローラ
-グラフィックスアダプタ2: AMD Radeon™ RX 6600
+グラフィックスアダプタ1: Intel Arrow Lake-HX/S - 統合グラフィックスコントローラ  
+グラフィックスアダプタ2: AMD Radeon™ RX 6600  
 
-オーディオアダプタ: Realtek USB Audio (内蔵 USB Realtek ALC4080 7.1)
-ネットワークアダプタ: USB Realtek 8125b
-Bluetoothアダプタ: Intel(R) Wi‑Fi 7 BE200 320MHz
-ストレージドライブ: WD_BLACK SN8100 2000GB (1863 GB)
+オーディオアダプタ: Realtek USB Audio (内蔵 USB Realtek ALC4080 7.1)  
+ネットワークアダプタ: USB Realtek 8125b  
+Bluetoothアダプタ: Intel(R) Wi‑Fi 7 BE200 320MHz  
+ストレージドライブ: WD_BLACK SN8100 2000GB (1863 GB)  
 
 既知のハードウェア問題:
 

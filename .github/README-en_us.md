@@ -8,19 +8,19 @@
 **OpenCore 1.05**
 **Supports macOS Sequoia 26.0.0 - 26.0.1**
 
-Processor: 8P+12E Intel Core Ultra 7 265K, 5399 MHz (54 x 100)
-Motherboard: Asus ROG Strix Z890-A Gaming WiFi S
-Chipset: Intel Arrow Point Z890, Intel Arrow Lake-S
+Processor: 8P+12E Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
+Motherboard: Asus ROG Strix Z890-A Gaming WiFi S  
+Chipset: Intel Arrow Point Z890, Intel Arrow Lake-S  
 
-System Memory: 95505 MB (DDR5 SDRAM)
+System Memory: 95505 MB (DDR5 SDRAM)  
 
-Graphics Adapter 1: Intel Arrow Lake-HX/S - Integrated Graphics Controller
-Graphics Adapter 2: AMD Radeon™ RX 6600
+Graphics Adapter 1: Intel Arrow Lake-HX/S - Integrated Graphics Controller  
+Graphics Adapter 2: AMD Radeon™ RX 6600  
 
-Audio Adapter: Realtek USB Audio (Built-in USB Realtek ALC4080 7.1)
-Network Adapter: USB Realtek 8125b
-Bluetooth Adapter: Intel(R) Wi-Fi 7 BE200 320MHz
-Storage Drive: WD_BLACK SN8100 2000GB (1863 GB)
+Audio Adapter: Realtek USB Audio (Built-in USB Realtek ALC4080 7.1)  
+Network Adapter: USB Realtek 8125b  
+Bluetooth Adapter: Intel(R) Wi-Fi 7 BE200 320MHz  
+Storage Drive: WD_BLACK SN8100 2000GB (1863 GB)  
 
 Known Hardware Issues:
 
