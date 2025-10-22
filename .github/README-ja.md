@@ -19,7 +19,7 @@
 オーディオアダプタ: Realtek USB Audio (内蔵 USB Realtek ALC4080 7.1)  
 ネットワークアダプタ: USB Realtek 8125b  
 Bluetoothアダプタ: Intel(R) Wi‑Fi 7 BE200 320MHz  
-~~ストレージドライブ: WD_BLACK SN8100 2000GB (1863 GB) pcie5.1 ~~  
+~~ストレージドライブ: WD_BLACK SN8100 2000GB (1863 GB) pcie5.1~~  
 ストレージドライブ: WD_BLACK SN850 2000GB (1863 GB) pcie4.0   
 
 **Note:**  
