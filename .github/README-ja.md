@@ -19,7 +19,12 @@
 オーディオアダプタ: Realtek USB Audio (内蔵 USB Realtek ALC4080 7.1)  
 ネットワークアダプタ: USB Realtek 8125b  
 Bluetoothアダプタ: Intel(R) Wi‑Fi 7 BE200 320MHz  
-ストレージドライブ: WD_BLACK SN8100 2000GB (1863 GB)  
+~~ストレージドライブ: WD_BLACK SN8100 2000GB (1863 GB) pcie5.1 ~~  
+ストレージドライブ: WD_BLACK SN850 2000GB (1863 GB) pcie4.0   
+
+**Note:**  
+**macOSはSN8100やPCIe 5.1を完全にはサポートしていません。システムのインストールは可能ですが、大量の小さなファイルの頻繁な書き込み時にcom.apple.apfsが原因でカーネルパニックが発生することがあります（macOSの15および26の両バージョンでテスト済みです）。**  
+
 
 既知のハードウェア問題:
 
@@ -29,7 +34,7 @@ Bluetoothアダプタ: Intel(R) Wi‑Fi 7 BE200 320MHz
 
 3. 外付けThunderbolt 3ドックに接続された AMD Radeon™ RX 6600 はセーフモードに入れず、USBインストーラーもサポートしません。
 
-4. `AppleIGC.kext` と `SimpleGBE.kext` にバグがありカーネルパニックを引き起こすため、内蔵有線LAN intel-i226-v およびThunderbolt 3ドック上の Intel I210 の有線LANは使用できません。
+4. ~~`AppleIGC.kext` と `SimpleGBE.kext` にバグがありカーネルパニックを引き起こすため、内蔵有線LAN intel-i226-v およびThunderbolt 3ドック上の Intel I210 の有線LANは使用できません。~~ (AppleIGC.kext 1.7.0 でこの問題は修正されました)  
 
 5. Intel BE200 無線アダプタは無線を駆動できませんが、Bluetooth は動作します。
 
@@ -42,7 +47,7 @@ Bluetoothアダプタ: Intel(R) Wi‑Fi 7 BE200 320MHz
 
 3. リカバリーモードのインストーラーを使用するか、Thunderbolt 3ドックを取り外して、インストール専用EFI（`efi-install`フォルダ）を使用してIntel統合グラフィックスでインストールやセーフモード操作を行ってください。
 
-4. `AppleIGC.kext` と `SimpleGBE.kext` を無効にし、Realtek 8125b チップセットを搭載した外付けUSB有線LANアダプタを使用してください。
+4. ~~`AppleIGC.kext` と `SimpleGBE.kext` を無効にし、Realtek 8125b チップセットを搭載した外付けUSB有線LANアダプタを使用してください。~~
 
 5. Bluetooth のみを使用するか、macOS 26 がサポートする外付けWi‑Fiアダプタを接続してください。
 

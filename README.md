@@ -6,23 +6,27 @@
 
 
 **opencore 1.05**  
-**support macOS Sequoia 26.0.0 - 26.0.1**  
+**support macOS Sequoia 15.0.0 - 26.0.1**  
 
-**处理器名称:** 8C+12c Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
-**主板名称:** Asus ROG Strix Z890-A Gaming WiFi S  
-**主板芯片组:** Intel Arrow Point Z890, Intel Arrow Lake-S  
+处理器名称: 8C+12c Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
+主板名称: Asus ROG Strix Z890-A Gaming WiFi S  
+主板芯片组: Intel Arrow Point Z890, Intel Arrow Lake-S  
 
-**系统内存:** 95505 MB  (DDR5 SDRAM)  
+系统内存: 95505 MB  (DDR5 SDRAM)  
 
-**显示适配器1:** Intel Arrow Lake-HX/S - Integrated Graphics Controller  
-**显示适配器2:** AMD Radeon™ RX 6600  
+显示适配器1: Intel Arrow Lake-HX/S - Integrated Graphics Controller  
+显示适配器2: AMD Radeon™ RX 6600  
 
-**音频适配器:** Realtek USB Audio (Built-in USB Realtek ALC4080 7.1)  
-**网络适配器:** USB Realtek 8125b  
-**蓝牙适配器:** Intel(R) Wi-Fi 7 BE200 320MHz  
-**硬盘驱动器:** WD_BLACK SN8100 2000GB  (1863 GB)  
+音频适配器: Realtek USB Audio (Built-in USB Realtek ALC4080 7.1)  
+网络适配器: USB Realtek 8125b  
+蓝牙适配器: Intel(R) Wi-Fi 7 BE200 320MHz  
+~~硬盘驱动器: WD_BLACK SN8100 2000GB  (1863 GB) pcie5.1~~  
+硬盘驱动器: WD_BLACK SN850 2000GB  (1863 GB) pcie4.0  
 
-**硬件缺陷:**  
+Note:  
+macos 没有完全支持SN8100或者PCIE5.1。 虽然能安装系统，但是在频繁写入大批量的小文件时会出现com.apple.apfs引起的kernel panic(已测试15和26两个版本的macOS)  
+
+硬件缺陷:  
 
     1. Intel Arrow Lake 核显无法完美驱动。  
 
@@ -30,14 +34,13 @@
 
     3. 外接雷电3扩展坞的AMD Radeon™ RX 6600 无法进入安全模式， 无法支持U盘安装  
 
-    4. 由于AppleIGC.kext SimpleGBE.kext 有BUG 会导致kernel panic,  
-        所以内置有线网卡 intel-i226-v 以及 雷电3扩展坞上的 intel-I210  
-        有线网卡均无法使用。
+    4. ~~由于AppleIGC.kext SimpleGBE.kext 有BUG 会导致kernel panic, 所以内置有线网卡intel-i226-v以及雷电3扩展坞上的 intel-I210有线网卡均无法使用。~~  
+     (AppleIGC.kext 1.7.0 已修复该问题)
 
     5. Intel BE200 无线网卡 无线无法驱动， 蓝牙可以驱动。  
 
 
-**硬件缺陷的解决方案:**  
+硬件缺陷的解决方案:  
 
     1. 外接雷电3扩展坞的AMD Radeon™ RX 6600  
 
@@ -45,12 +48,12 @@
 
     3. 使用恢复版安装 或者 移除雷电3扩展坞后，使用安装专用的EFI（efi-install）使用intel核显进行安装和安全模式操作
     
-    4. 禁用 AppleIGC.kext SimpleGBE.kext， 外接 USB Realtek 8125b 芯片的有线网卡  
+    4. ~~禁用 AppleIGC.kext SimpleGBE.kext， 外接 USB Realtek 8125b 芯片的有线网卡~~  
 
     5. 只使用蓝牙，或者外接MacOS26支持的无线网卡  
 
 
-**BISO选项:**  
+BISO选项:  
 
     1. 必须选项：
 
@@ -75,13 +78,13 @@
                 安装完成后再开启，可正常进入MacOS系统)
 
 
-**EFI说明:**  
+EFI说明:  
 
     1. efi-install 进入安全模式的EFI， 只能用于安装升级和维护， 使用intel核显。（需要移除AMD独显）
     
     2. efi-run-system 正常运行系统的EFI 只能用于正常运行系统， 使用AMD独显。（不能进入安全模式, 无法用于安装升级和维护）
 
-**U盘安装方法:**  
+U盘安装方法:  
 
     1. 移除雷电3扩展坞  
 
@@ -95,7 +98,7 @@
     5. 使用efi-run-system中的OpenCore引导 已经安装好的系统 进行设置。
 
 
-**升级系统步骤:**
+升级系统步骤:
 
     1. 使用efi-run-system中的OpenCore引导进入系统 安装升级包， 直到提示重启。 
     

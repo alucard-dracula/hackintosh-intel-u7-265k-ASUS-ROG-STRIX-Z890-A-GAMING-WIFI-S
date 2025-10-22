@@ -20,7 +20,11 @@ Graphics Adapter 2: AMD Radeon™ RX 6600
 Audio Adapter: Realtek USB Audio (Built-in USB Realtek ALC4080 7.1)  
 Network Adapter: USB Realtek 8125b  
 Bluetooth Adapter: Intel(R) Wi-Fi 7 BE200 320MHz  
-Storage Drive: WD_BLACK SN8100 2000GB (1863 GB)  
+~~Storage Drive: WD_BLACK SN8100 2000GB (1863 GB) pcie5.1~~  
+Storage Drive: WD_BLACK SN850 2000GB (1863 GB) pcie4.0  
+
+**Note:**  
+**macOS does not fully support the SN8100 or PCIe 5.1. Although the system can be installed, kernel panics caused by com.apple.apfs occur when frequently writing large amounts of small files (tested on macOS versions 15 and 26).**  
 
 Known Hardware Issues:
 
@@ -30,7 +34,7 @@ Known Hardware Issues:
 
 3. The external Thunderbolt 3 dock's AMD Radeon™ RX 6600 cannot boot into Safe Mode and does not support USB installer usage.
 
-4. Due to bugs in AppleIGC.kext and SimpleGBE.kext that can cause kernel panics, the built-in wired NIC intel-i226-v and the Intel I210 on the Thunderbolt 3 dock cannot be used.
+4. ~~Due to bugs in AppleIGC.kext and SimpleGBE.kext that can cause kernel panics, the built-in wired NIC intel-i226-v and the Intel I210 on the~~ ~~Thunderbolt 3 dock cannot be used.~~ (AppleIGC.kext 1.7.0 has resolved this issue)  
 
 5. The Intel BE200 Wi‑Fi adapter cannot be driven for wireless; Bluetooth works.
 
@@ -43,7 +47,7 @@ Workarounds for Hardware Issues:
 
 3. Use the recovery-mode installer or remove the Thunderbolt 3 dock and use the installer-specific EFI (the `efi-install` folder) to install and perform Safe Mode operations using the Intel integrated graphics.
 
-4. Disable `AppleIGC.kext` and `SimpleGBE.kext` and use an external USB wired NIC based on the Realtek 8125b chipset.
+4. ~~Disable `AppleIGC.kext` and `SimpleGBE.kext` and use an external USB wired NIC based on the Realtek 8125b chipset.~~
 
 5. Use Bluetooth only, or connect an external Wi‑Fi adapter that is supported by macOS 26.
 
