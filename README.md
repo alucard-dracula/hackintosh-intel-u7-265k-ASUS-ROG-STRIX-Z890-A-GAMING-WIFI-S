@@ -24,7 +24,7 @@
 硬盘驱动器: WD_BLACK SN850 2000GB  (1863 GB) pcie4.0  
 
 Note:  
-macos 没有完全支持SN8100或者PCIE5.1。 虽然能安装系统，但是在频繁写入大批量的小文件时会出现com.apple.apfs引起的kernel panic(已测试15和26两个版本的macOS)  
+macos 没有完全支持SN8100或者PCIE5.1。 虽然能安装系统，但是在频繁写入大批量的小文件时会出现com.apple.filesystems.apfs引起的kernel panic(已测试15和26两个版本的macOS)  
 
 硬件缺陷:  
 
