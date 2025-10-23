@@ -24,7 +24,7 @@ Bluetooth Adapter: Intel(R) Wi-Fi 7 BE200 320MHz
 Storage Drive: WD_BLACK SN850 2000GB (1863 GB) pcie4.0  
 
 **Note:**  
-**macOS does not fully support the SN8100 or PCIe 5.1. Although the system can be installed, kernel panics caused by com.apple.apfs occur when frequently writing large amounts of small files (tested on macOS versions 15 and 26).**  
+**macOS does not fully support the SN8100 or PCIe 5.1. Although the system can be installed, kernel panics caused by com.apple.filesystems.apfs occur when frequently writing large amounts of small files (tested on macOS versions 15 and 26).**  
 
 Known Hardware Issues:
 
