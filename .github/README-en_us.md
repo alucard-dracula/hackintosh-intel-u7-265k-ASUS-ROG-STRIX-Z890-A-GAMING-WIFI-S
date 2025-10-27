@@ -30,7 +30,7 @@ Known Hardware Issues:
 
 1. The Intel Arrow Lake integrated GPU cannot be perfectly driven.
 
-2. Because the CPU must be spoofed as a 10th-generation Intel CPU, the full cores cannot be run at full load; running all cores at full load may cause a kernel panic.
+2. ~~Because the CPU must be spoofed as a 10th-generation Intel CPU, the full cores cannot be run at full load; running all cores at full load may cause a kernel panic.~~（disable AppleXcmpForceBoost）  
 
 3. The external Thunderbolt 3 dock's AMD Radeon™ RX 6600 cannot boot into Safe Mode and does not support USB installer usage.
 
@@ -43,7 +43,7 @@ Workarounds for Hardware Issues:
 
 1. Remove or avoid using the external Thunderbolt 3 dock with the AMD Radeon™ RX 6600 when performing operations that require Safe Mode or USB installers.
 
-2. Avoid running the CPU at full sustained load for long periods (for example, avoid running builds like clang -j20 continuously).
+2. ~~Avoid running the CPU at full sustained load for long periods (for example, avoid running builds like clang -j20 continuously).~~  
 
 3. Use the recovery-mode installer or remove the Thunderbolt 3 dock and use the installer-specific EFI (the `efi-install` folder) to install and perform Safe Mode operations using the Intel integrated graphics.
 

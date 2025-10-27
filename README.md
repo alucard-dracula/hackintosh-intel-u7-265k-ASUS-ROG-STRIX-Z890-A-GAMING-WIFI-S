@@ -30,11 +30,11 @@ macos 没有完全支持SN8100或者PCIE5.1。 虽然能安装系统，但是在
 
     1. Intel Arrow Lake 核显无法完美驱动。  
 
-    2. 由于需要仿冒10代intel-cpu, 所以全核心无法跑满， 跑满容易kernel panic  
+    2. ~~由于需要仿冒10代intel-cpu, 所以全核心无法跑满， 跑满容易kernel panic~~ (中文markdown删除线出不来)（不要打开AppleXcmpForceBoost）  
 
     3. 外接雷电3扩展坞的AMD Radeon™ RX 6600 无法进入安全模式， 无法支持U盘安装  
 
-    4. ~~由于AppleIGC.kext SimpleGBE.kext 有BUG 会导致kernel panic, 所以内置有线网卡intel-i226-v以及雷电3扩展坞上的 intel-I210有线网卡均无法使用。~~  
+    4. ~~由于AppleIGC.kext SimpleGBE.kext 有BUG 会导致kernel panic, 所以内置有线网卡intel-i226-v以及雷电3扩展坞上的 intel-I210有线网卡均无法使用。~~  (中文markdown删除线出不来)
      (AppleIGC.kext 1.7.0 已修复该问题)
 
     5. Intel BE200 无线网卡 无线无法驱动， 蓝牙可以驱动。  
@@ -44,11 +44,11 @@ macos 没有完全支持SN8100或者PCIE5.1。 虽然能安装系统，但是在
 
     1. 外接雷电3扩展坞的AMD Radeon™ RX 6600  
 
-    2. 不要长时间跑满CPU核心 （比如 clang -j20） 
+    2. ~~不要长时间跑满CPU核心 （比如 clang -j20）~~  (中文markdown删除线出不来)  
 
     3. 使用恢复版安装 或者 移除雷电3扩展坞后，使用安装专用的EFI（efi-install）使用intel核显进行安装和安全模式操作
     
-    4. ~~禁用 AppleIGC.kext SimpleGBE.kext， 外接 USB Realtek 8125b 芯片的有线网卡~~  
+    4. ~~禁用 AppleIGC.kext SimpleGBE.kext， 外接 USB Realtek 8125b 芯片的有线网卡~~  (中文markdown删除线出不来)
 
     5. 只使用蓝牙，或者外接MacOS26支持的无线网卡  
 
