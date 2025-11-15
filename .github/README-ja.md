@@ -20,7 +20,7 @@
 ネットワークアダプタ: USB Realtek 8125b  
 Bluetoothアダプタ: Intel(R) Wi‑Fi 7 BE200 320MHz  
 ~~ストレージドライブ: WD_BLACK SN8100 2000GB (1863 GB) pcie5.1~~  
-ストレージドライブ: WD_BLACK SN850 2000GB (1863 GB) pcie4.0   
+ストレージドライブ: WD_BLACK SN850X 2000GB (1863 GB) pcie4.0   
 
 **Note:**  
 **macOSはSN8100やPCIe 5.1を完全にはサポートしていません。システムのインストールは可能ですが、大量の小さなファイルの頻繁な書き込み時にcom.apple.filesystems.apfsが原因でカーネルパニックが発生することがあります（macOSの15および26の両バージョンでテスト済みです）。**  
