@@ -21,7 +21,7 @@
 网络适配器: USB Realtek 8125b  
 蓝牙适配器: Intel(R) Wi-Fi 7 BE200 320MHz  
 ~~硬盘驱动器: WD_BLACK SN8100 2000GB  (1863 GB) pcie5.1~~  
-硬盘驱动器: WD_BLACK SN850 2000GB  (1863 GB) pcie4.0  
+硬盘驱动器: WD_BLACK SN850X 2000GB  (1863 GB) pcie4.0  
 
 Note:  
 macos 没有完全支持SN8100或者PCIE5.1。 虽然能安装系统，但是在频繁写入大批量的小文件时会出现com.apple.filesystems.apfs引起的kernel panic(已测试15和26两个版本的macOS)  
