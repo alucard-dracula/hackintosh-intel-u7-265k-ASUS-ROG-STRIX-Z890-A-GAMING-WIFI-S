@@ -5,8 +5,8 @@
 - [日本語](/.github/README-ja.md)  
 
 
-**opencore 1.05**  
-**support macOS Sequoia 15.0.0 - 26.0.1**  
+**opencore 1.06**  
+**support macOS Sequoia 15.0.0 - 26.2**  
 
 处理器名称: 8C+12c Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
 主板名称: Asus ROG Strix Z890-A Gaming WiFi S  
