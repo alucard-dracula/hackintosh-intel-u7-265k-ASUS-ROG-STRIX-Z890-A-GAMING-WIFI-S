@@ -4,8 +4,8 @@
 - [English](/.github/README-en_us.md)
 - **日本語**
 
-**OpenCore 1.05**
-**macOS Sequoia 26.0.0 - 26.0.1 をサポート**
+**OpenCore 1.06**
+**macOS Sequoia 26.0.0 - 26.2 をサポート**
 
 プロセッサ: 8P+12E Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
 マザーボード: Asus ROG Strix Z890-A Gaming WiFi S  
