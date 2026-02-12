@@ -58,6 +58,7 @@ BISO选项:
     1. 必须选项：
 
         1.1. 关闭 原生ASPM （如果不关闭OpenCore无法引导）
+        1.2. 关闭 memory remap （如果不关闭OpenCore无法引导）
 
     2. 建议选项： 
         

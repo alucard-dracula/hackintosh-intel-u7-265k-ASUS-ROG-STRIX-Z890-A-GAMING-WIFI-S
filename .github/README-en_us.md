@@ -57,6 +57,7 @@ BIOS Settings:
 1. Required settings:
 
     1.1. Disable native ASPM (if not disabled OpenCore will not boot).
+    1.2. Disable memory remap (if not disabled OpenCore will not boot).
 
 2. Recommended settings:
 
