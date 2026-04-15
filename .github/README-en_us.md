@@ -6,7 +6,7 @@
 
 
 **OpenCore 1.06**
-**Supports macOS Sequoia 26.0.0 - 26.2**
+**Supports macOS 15.0.0 - 26.4**
 
 Processor: 8P+12E Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
 Motherboard: Asus ROG Strix Z890-A Gaming WiFi S  
@@ -20,7 +20,7 @@ Graphics Adapter 2: AMD Radeon™ RX 6600
 Audio Adapter: Realtek USB Audio (Built-in USB Realtek ALC4080 7.1)  
 Network Adapter: USB Realtek 8125b  
 Bluetooth Adapter: Intel(R) Wi-Fi 7 BE200 320MHz  
-~~Storage Drive: WD_BLACK SN8100 2000GB (1863 GB) pcie5.1~~  
+~~Storage Drive: WD_BLACK SN8100 2000GB (1863 GB) pcie5.1~~(The firmware for SN8100 has been officially upgraded, but I haven't tested the compatibility)  
 Storage Drive: WD_BLACK SN850X 2000GB (1863 GB) pcie4.0  
 
 **Note:**  
@@ -104,7 +104,7 @@ System Upgrade Steps:
 
 3. Boot the system using the OpenCore in `efi-install` to perform the upgrade, continue until the login screen appears.
 
-4. DO NOT log in—restart and power off immediately.
+4. !!!DO NOT log in system!!!. restart and power off immediately.
 
 5. Reconnect the Thunderbolt 3 dock and boot the system using the OpenCore in `efi-run-system`, then complete any remaining setup steps.
 

@@ -6,7 +6,7 @@
 
 
 **opencore 1.06**  
-**support macOS Sequoia 15.0.0 - 26.2**  
+**support macOS 15.0.0 - 26.4**  
 
 处理器名称: 8C+12c Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
 主板名称: Asus ROG Strix Z890-A Gaming WiFi S  
@@ -20,7 +20,7 @@
 音频适配器: Realtek USB Audio (Built-in USB Realtek ALC4080 7.1)  
 网络适配器: USB Realtek 8125b  
 蓝牙适配器: Intel(R) Wi-Fi 7 BE200 320MHz  
-~~硬盘驱动器: WD_BLACK SN8100 2000GB  (1863 GB) pcie5.1~~  
+~~硬盘驱动器: WD_BLACK SN8100 2000GB  (1863 GB) pcie5.1~~(SN8100的固件官方已经升级了，但我没有测试兼容性如何)  
 硬盘驱动器: WD_BLACK SN850X 2000GB  (1863 GB) pcie4.0  
 
 Note:  
@@ -30,7 +30,7 @@ macos 没有完全支持SN8100或者PCIE5.1。 虽然能安装系统，但是在
 
     1. Intel Arrow Lake 核显无法完美驱动。  
 
-    2. ~~由于需要仿冒10代intel-cpu, 所以全核心无法跑满， 跑满容易kernel panic~~ (中文markdown删除线出不来)（不要打开AppleXcmpForceBoost）  
+    2. ~~由于需要仿冒10代intel-cpu, 所以全核心无法跑满, 跑满容易kernel panic~~ (中文markdown删除线出不来)(不要打开AppleXcmpForceBoost)   
 
     3. 外接雷电3扩展坞的AMD Radeon™ RX 6600 无法进入安全模式， 无法支持U盘安装  
 
