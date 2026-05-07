@@ -5,11 +5,15 @@
 - [日本語](/.github/README-ja.md)  
 
 
-**opencore 1.06**  
-**support macOS 15.0.0 - 26.4**  
+**特别事项**
+如果按这个配置安装，主板BIOS最好在2302这个版本，3103这个版本会很麻烦，请一定要看最后的说明
+在2302和3103之间的版本没有测试过。
+
+**opencore 1.07**  
+**support macOS 15.0.0 - 26.4.1**  
 
 处理器名称: 8C+12c Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
-主板名称: Asus ROG Strix Z890-A Gaming WiFi S  
+主板名称: Asus ROG Strix Z890-A Gaming WiFi S
 主板芯片组: Intel Arrow Point Z890, Intel Arrow Lake-S  
 
 系统内存: 95505 MB  (DDR5 SDRAM)  
@@ -59,6 +63,7 @@ BISO选项:
 
         1.1. 关闭 原生ASPM （如果不关闭OpenCore无法引导）
         1.2. 关闭 memory remap （如果不关闭OpenCore无法引导）
+        1.3. 关闭 X2APCI （如果不关闭OpenCore无法引导, 关闭后可以设置开启VT-d，但需要在opencore中设置DisableIoMapper）
 
     2. 建议选项： 
         
@@ -113,4 +118,8 @@ U盘安装方法:
 
     （备注：如果在系统升级的步骤1过程中，经常死机（apfs原生驱动引发kernel panic）可以使用U盘进行升级，
         在升级过程中apfs原生驱动也有可能导致死机，请重试1-2次，如果一直出现请根据自身情况调整OpenCore配置 ）
+
+补充针对ROG-STRIX-Z890-A-GAMING-WIFI-S-ASUS-3103的说明:
+    这个版本的BIOS使用核显安装时会发生-v日志卡住的情况, 这个时候请开启显卡坞电源（一定要这个时候开启，不能在开机时就打开显卡坞电源， 开着显卡坞直接插拔雷电线），  
+    并切换显示屏到显卡坞的显示端口，确认安装界面是否正确的显示了。如果正确显示了，那么就可以正常操作。 安装过程中的每次重启都要按这个步骤操作，直到安装完成显示登录界面
 
