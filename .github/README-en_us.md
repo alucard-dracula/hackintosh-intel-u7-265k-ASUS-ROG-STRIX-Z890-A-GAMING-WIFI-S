@@ -4,7 +4,7 @@
 - **English**
 - [日本語](/.github/README-ja.md)
 
-**Special Notes**
+**Special Notes:**  
 If installed according to this configuration, it is best for the motherboard BIOS to be at version 2302. Version 3103 may cause some issues, so be sure to read the final instructions.
 Versions between 2302 and 3103 have not been tested.
 
@@ -114,6 +114,6 @@ System Upgrade Steps:
 
 (Note: If the system frequently crashes during step 1 of the upgrade due to APFS native driver kernel panics, you can perform the upgrade from a USB installer. APFS native drivers can also cause crashes during upgrades—retry 1–2 times, and if crashes persist, adjust OpenCore configuration accordingly.)
 
-Additional instructions for ROG-STRIX-Z890-A-GAMING-WIFI-S-ASUS-3103:  
+**Additional instructions for ROG-STRIX-Z890-A-GAMING-WIFI-S-ASUS-3103:**  
 When using this version of the BIOS with the integrated graphics, the installation may get stuck at the -v log. At this point, please turn on the eGPU dock power (it is crucial to do this at this moment; do not turn on the eGPU dock power when powering on the computer. Do not plug or unplug the Thunderbolt cable while the dock is powered on).  
 Then switch the display to the eGPU dock's display port and check whether the installation interface is displayed correctly. If it is displayed correctly, you can proceed with normal operation. You should follow this step on every reboot during the installation process until the login screen appears.
