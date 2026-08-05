@@ -9,7 +9,7 @@ If installed according to this configuration, it is best for the motherboard BIO
 Versions between 2302 and 3103 have not been tested.
 
 **OpenCore 1.07**
-**Supports macOS 15.0.0 - 26.4.1**
+**Supports macOS 15.0.0 - 26.6**
 
 Processor: 8P+12E Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
 Motherboard: Asus ROG Strix Z890-A Gaming WiFi S  
