@@ -10,7 +10,7 @@
 在2302和3103之间的版本没有测试过。
 
 **opencore 1.07**  
-**support macOS 15.0.0 - 26.4.1**  
+**support macOS 15.0.0 - 26.6**  
 
 处理器名称: 8C+12c Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
 主板名称: Asus ROG Strix Z890-A Gaming WiFi S
