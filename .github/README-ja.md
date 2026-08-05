@@ -9,7 +9,7 @@
 2302と3103の間のバージョンはテストされていません。
 
 **OpenCore 1.07**
-**macOS 15.0.0 - 26.4.1 をサポート**
+**macOS 15.0.0 - 26.6 をサポート**
 
 プロセッサ: 8P+12E Intel Core Ultra 7 265K, 5399 MHz (54 x 100)  
 マザーボード: Asus ROG Strix Z890-A Gaming WiFi S  
